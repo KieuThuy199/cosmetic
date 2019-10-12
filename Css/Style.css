@@ -1,0 +1,195 @@
+/* HEADER*/
+header {
+    margin-top: 10px;
+}
+.logo {
+    text-align: center;
+}
+header ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    position: absolute;
+}
+header li {
+    display:inline-block;
+    float: left;
+   
+}
+
+header li a {
+    display:block;
+    min-width:140px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    font-family: Playfair Display, Arial, Helvetica, sans-serif;
+    color: #4c4c4c;
+    /*background: #2f3036;*/
+    text-decoration: none;
+    border-radius: 5px;
+}
+header li:hover a {
+    background: #28a745eb;
+    text-decoration: none;
+}
+
+header li:hover ul a {
+    background: #f3f3f3;
+    color: #2f3036;
+    height: 40px;
+    line-height: 40px;
+}
+
+header li:hover ul a:hover {
+    background: #28a745eb;
+    color: #fff;
+}
+
+header li ul {
+    display: none;
+}
+
+header li ul li {
+    display: block;
+    float: none;
+}
+
+header li ul li a {
+    width: auto;
+    min-width: 100px;
+    padding: 0 20px;
+}
+header ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+    z-index: 1;
+}
+header .show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #28a745eb;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+
+header input[type=checkbox]{
+    display: none;
+}
+header input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+/*POST SLIDER*/
+.carousel {
+    margin-top: 10px;
+}
+.carousel-caption {
+    background: #21252975;
+}
+
+
+/*MEDIA QUERIES*/
+@media screen and (max-width : 993px){
+    /*POST SLIDER*/
+    .carousel {
+        margin-top: 60px;
+    }
+}
+@media screen and (max-width : 770px){
+    header ul {
+        position: static;
+        display: none;
+    }
+    header li {
+        margin-bottom: 1px;
+    }
+    
+    header ul li, li a {
+        width: 100%;
+        z-index: 1;
+    }
+    
+    header .show-menu {
+        display:block;
+    }
+    /*POST SLIDER*/
+    .carousel {
+        margin-top: 10px;
+    }
+}
+
+/*BLOG*/
+.top{
+    margin-top: 2%;
+    border: 1px solid #4c4c4c;
+}
+.tieude{
+    background-color: #98AB3F;
+    text-align: center;
+    line-height: 1.6em;
+    color: #fff;
+    margin-bottom: 0px;
+}
+.control{
+    text-align: right;
+    padding: 1% 0%;
+}
+.fa-long-arrow-alt-left,
+.fa-long-arrow-alt-right{
+    font-size:2em;
+    color: #98AB3F;
+    padding: 0% 2%;
+    border-radius: 12px;
+    border: 1px solid #98AB3F;
+}
+.fa-long-arrow-alt-left:hover,
+.fa-long-arrow-alt-right:hover{
+    color: cornsilk;
+    background-color: #98AB3F;
+}     
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        margin: 3% 0%;
+    }
+    .swiper-slide {
+        font-size: 18px;
+        text-align: center;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .blog-item{
+        padding: 2%;
+    }
+    .blog-item img{
+        width: 330px;
+        height: 200px;
+    }
+    .btn-primary{
+        background-color: #fff!important;
+        color: #98AB3F!important;
+        border-color: #98AB3F!important;
+    }
+    .btn-primary:hover{
+        background-color: #98AB3F!important;
+        color: #fff!important;
+    }
+
+  
+/*BRANDS*/
